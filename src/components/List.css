@@ -1,0 +1,85 @@
+/* styling follows mobile first approach */
+
+.container {
+  width: 400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: .5em;
+  background-color: #F8F7FF;
+}
+
+.header {
+  padding: 1em;
+  background-image: url(../../public/Pattern.svg);
+}
+
+.header h1 {
+  margin: 1em 0 0;
+  padding: 0;
+  color: #5E56E7;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: left;
+  line-height: 1.1;
+}
+
+.header p {
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.genre-list {
+  margin: 1em 0 2em;
+}
+
+.genre {
+  margin: 1em;
+  width: 85%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: 0 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
+
+.genre h3 {
+  margin: 0;
+  margin-left: .5em;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.img-icon {
+  width: 20px;
+}
+
+.next-btn {
+  margin-left: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Media query for larger device */
+
+@media (min-width: 900px) {
+  .container {
+    min-width: 900px;
+  }
+
+  .genre-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .genre {
+    min-width: 300px;
+  }
+}

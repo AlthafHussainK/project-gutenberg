@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import List from './components/List';
+import Books from './components/Books';
+import { Route, Routes } from 'react-router-dom';
+import { GenreContext } from './context/GenreContext';
+import { useState } from 'react';
 
 function App() {
+  const [genre, setGenre] = useState('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={  
+           <GenreContext.Provider value={{ genre, setGenre }}> 
+             <List />
+          </GenreContext.Provider> 
+        }/>
+        <Route path="/books" element={
+          <GenreContext.Provider value={{ genre, setGenre }}>
+             <Books />
+          </GenreContext.Provider>
+        } />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+// As per the latest react-router-dom (6.3.0), the component is passed as element
+// A context is created at context/GenreContext.js and the values are passed throgh context providers

@@ -1,0 +1,123 @@
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+  width: 400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.title-section {
+  display: flex;
+  margin-left: .5em;
+}
+
+.title-section img {
+  margin-top: 1.3em;
+}
+
+.title-section h1 {
+  margin: 0;
+  padding: .5em .35em;
+  color: #5E56E7;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.searchbar {
+  position: relative;
+  width: 80%;
+  margin-left: .5em;
+}
+
+.searchbar img {
+  position: absolute;
+  width: 15px;
+  top: 12px;
+  left: 10px;
+}
+
+.searchbar input {
+  width: 98%;
+  height: 40px;
+  padding: 0 35px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #F0F0F6;
+}
+
+.searchbar input:focus {
+  border: 1px solid;
+  border-color: #5E56E7;
+  outline: 0;
+}
+
+p {
+  padding: 0;
+  line-height: 1.2;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  padding: .75em .5em 1.5em;
+  background-color: #F0F0F6;
+}
+
+.book-box {
+  width: 110px;
+  margin-top: 1em;
+  font-size: .75rem;
+  margin-bottom: .75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-cover {
+  width: 110px;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+  cursor: pointer;
+}
+
+.book-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
+.book-author {
+  font-weight: 600;
+  color: #A0A0A0;
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .main-container {
+    width: 800px;
+  }
+
+  .book-box {
+    margin-left: 2em;
+  }
+
+  .searchbar {
+    width: 90%;
+  }
+}
