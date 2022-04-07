@@ -71,14 +71,14 @@ export default function ListPage() {
       {/* Header section */}
       <div className='title-section'>
         <Link to="/">
-          <img src='../../assets/Back.svg' />
+          <img src='../../Assets/Back.svg' />
         </Link>
         <h1>{genre ? genre : 'All'}</h1>
       </div>
 
       {/* Seachbox */}
       <div className='searchbar'>
-        <img src='../../assets/Search.svg' /> 
+        <img src='../../Assets/Search.svg' /> 
         <input placeholder='Search' type='text' onChange={handleSearch} />
       </div>
       

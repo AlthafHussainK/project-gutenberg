@@ -25,9 +25,9 @@ export default function List() {
             genreList.map(item => (
               <Link to='/books' onClick={() => setGenre(`${item}`)} key={item}>
                 <div className='genre'>
-                  <img src={`/assets/${item}.svg`} className='img-icon'  alt={`icon for ${item}`} />
+                  <img src={`/Assets/${item}.svg`} className='img-icon'  alt={`icon for ${item}`} />
                   <h3>{item}</h3>
-                  <img src='assets/Next.svg' className='img-icon next-btn'  alt='' />
+                  <img src='Assets/Next.svg' className='img-icon next-btn'  alt='' />
                 </div>
               </Link>
             ))
