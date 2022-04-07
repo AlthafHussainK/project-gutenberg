@@ -10,8 +10,9 @@
 
 .header {
   padding: 1em;
-  background-image: url(../../public/assets/Pattern.svg);
+  background-image: url('./../../public/assets/Pattern.svg');
 }
+gutenberg/public/Pattern.svg
 
 .header h1 {
   margin: 1em 0 0;
